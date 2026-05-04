@@ -1,0 +1,8 @@
+{
+ "health_endpoint": "/ping",
+ "predict_endpoint": "/predict",
+ "port": 9000,
+ "health_response": {"status": "healthy", "model_loaded": true},
+ "test_input": {"pr_lines_changed": 1039, "reviewer_load": 5, "file_count": 22, "is_critical_path": 1},
+ "prediction": 18.92259999999999
+}

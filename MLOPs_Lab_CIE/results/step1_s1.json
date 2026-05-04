@@ -1,0 +1,22 @@
+{
+    "experiment_name": "mergegate-review-turnaround-hours",
+    "models": [
+        {
+            "name": "Lasso",
+            "mae": 5.2500267775986025,
+            "rmse": 5.9484469681169605,
+            "r2": -0.29119612815456364,
+            "mape": 19.52568253185831
+        },
+        {
+            "name": "RandomForest",
+            "mae": 3.598340000000001,
+            "rmse": 4.073855426742582,
+            "r2": 0.39438551749112905,
+            "mape": 14.621955028707495
+        }
+    ],
+    "best_model": "RandomForest",
+    "best_metric_name": "mae",
+    "best_metric_value": 3.598340000000001
+}

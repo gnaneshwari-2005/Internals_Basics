@@ -75,3 +75,14 @@ with open("results/step1_s1.json", "w") as f:
     json.dump(output, f, indent=4)
 
 print("Task 1 completed")
+
+import joblib
+
+# Save best model
+best_model_name = best["name"]
+if best_model_name == "Lasso":
+    final_model = lasso
+else:
+    final_model = rf
+
+joblib.dump(final_model, "models/best_model.pkl")
