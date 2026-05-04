@@ -1,0 +1,4 @@
+{
+  "log_file": "logs/app.log",
+  "sample_log": "Input: [[1039, 5, 22, 1]], Prediction: 18.92259999999999"
+}

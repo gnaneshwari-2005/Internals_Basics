@@ -1,3 +1,10 @@
+import logging
+
+logging.basicConfig(
+    filename="logs/app.log",
+    level=logging.INFO,
+    format="%(asctime)s - %(message)s"
+)
 from fastapi import FastAPI
 from pydantic import BaseModel, Field
 import joblib
@@ -26,5 +33,7 @@ def predict(data: InputData):
                    data.is_critical_path]])
 
     prediction = model.predict(X)[0]
+
+    logging.info(f"Input: {X.tolist()}, Prediction: {prediction}")
 
     return {"prediction": float(prediction)}
